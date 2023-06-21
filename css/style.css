@@ -96,7 +96,10 @@
   padding: 10px 25px;
   border-radius: 12px;
 }
-.home__page .highlighted__section .h__card .desc__div .cat, .home__page .highlighted__section .h__card .desc__div .heading, .home__page .highlighted__section .h__card .desc__div p, .home__page .highlighted__section .h__card .desc__div a {
+.home__page .highlighted__section .h__card .desc__div .cat,
+.home__page .highlighted__section .h__card .desc__div .heading,
+.home__page .highlighted__section .h__card .desc__div p,
+.home__page .highlighted__section .h__card .desc__div a {
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
@@ -109,6 +112,22 @@
   font-weight: 600;
 }
 
+@media (max-width: 767px) {
+  .home__page .banner__section .banner-carousel .item img {
+    min-height: 500px;
+    object-fit: cover;
+    object-position: right;
+  }
+  .home__page .banner__section .banner-carousel .item .card {
+    left: 20px;
+    right: 20px;
+    bottom: -50px;
+    top: unset;
+  }
+  .home__page .highlighted__section .h__card {
+    margin-bottom: 8rem;
+  }
+}
 .product__page {
   padding: 2rem 0px;
 }
@@ -618,7 +637,7 @@ footer .bottom__footer ul li a:hover {
   line-height: 40px;
   letter-spacing: 0em;
   text-align: center;
-  color: #BFBFBF;
+  color: #bfbfbf;
 }
 .one__touch .inner__div .mail__div {
   display: flex;
