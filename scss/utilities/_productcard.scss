@@ -1,0 +1,78 @@
+.slider__heading
+{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+padding-left: 20px;
+}
+.p__card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 12px;
+    &:hover{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .wishlist{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 15px;
+    }
+    img{
+        width: 300px;
+        padding: 20px 0px;
+    }
+    .p__name{
+        font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: center;
+color: #000;
+    }
+    .P__desc,.p__cat{
+        font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: center;
+color: #656565;
+    }
+    .p__price{
+        font-family: Inter;
+font-size: 15px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0.4000000059604645px;
+text-align: center;
+color: #131313;
+    }
+    transition: all ease-in-out 300ms;
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -ms-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms;
+}
+
+.add_to_cart{
+    display: block;
+    background-color: #000;
+    color: #fff;
+    font-family: Poppins;
+font-size: 12px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: center;
+padding: 6px;
+}

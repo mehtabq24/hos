@@ -1,0 +1,11 @@
+.accordion-item{
+    h2{
+        button{
+        &:not(.collapse){
+            box-shadow: none !important;
+            background-color: transparent !important;
+            color: #000 !important;
+        }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.product__page {
+  padding: 2rem 0px;
+  p {
+    font-family: Mulish;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1c1c1c;
+  }
+  .desc {
+    font-family: Mulish;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .read_more {
+    margin: 20px 0px;
+    font-family: Mulish;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: block;
+  }
+  .product_side_bar {
+    font-family: Mulish;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(28, 28, 28, 0.65);
+    .category {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .name {
+      font-weight: 700;
+      font-size: 16px;
+      color: rgba(28, 28, 28, 0.65);
+      margin-bottom: 10px;
+    }
+    .product_short_desc,
+    .price {
+      font-weight: 600;
+      font-size: 16px;
+      color: rgba(28, 28, 28, 0.65);
+      margin-bottom: 10px;
+    }
+    .tag_line {
+      font-size: 10px;
+      font-weight: 500;
+    }
+    .side_card {
+      border: solid 1px rgba(0, 0, 0, 0.3);
+      padding: 18px 12px;
+      margin: 15px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      .header {
+        font-family: Mulish;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 13px;
+        letter-spacing: 0em;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        img {
+          width: 35px;
+          height: 20px;
+        }
+        p {
+          margin-bottom: 0px;
+        }
+      }
+      .size_accordion{
+        button{
+        font-size: 14px !important;
+        padding: 0.5rem;
+        }
+      }
+      .desc_accordion{
+        .accordion-item{
+            border: none;
+        }
+      }
+    }
+    .view__line{
+        p{
+            font-family: Mulish;
+font-size: 14px;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 0em;
+margin-bottom: 0px;
+        }
+    }
+  }
+  .product_main_desc{
+    .col{
+        border: #efefef solid 1px;
+        padding: 20px 30px;
+        .cat{
+            color: #7a7a7a;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-weight: 600;
+        }
+    }
+  }
+}
