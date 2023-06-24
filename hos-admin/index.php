@@ -120,7 +120,7 @@ message:{
             success: function(data){
               if(data=='done'){				
               alert("Login Successfully");
-							window.location = "http://localhost/hos-admin/home.php";
+							window.location = "http://localhost/hos/hos-admin/home.php";
 							}
 							else{
 								alert("Wrong Credentials")

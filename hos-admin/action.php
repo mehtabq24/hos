@@ -73,10 +73,11 @@ if($_POST['btn']=='deleteCategory_id'){
     $slug = $_POST['slug'];
     $cat = $_POST['category'];
     $description = $_POST['description']; 
-    $image_link = $_POST['image_link'];
+    $img_id = $_POST['img_id'];
     $PostDate = date("Y-m-d H:i");
-    $stmt = $conn->prepare("INSERT INTO product(image, name, slug, category, price, description, date) VALUES(?,?,?,?,?,?,?)");
-    if($stmt->execute([$image_link, $name, $slug, $cat, $prc, $description, $PostDate])){
+    $stmt = $conn->prepare("INSERT INTO product(img_id, front_img, product_name, 
+    prc, disc_prc, slug, category, description, PostDate, status) VALUES(?,?,?,?,?,?,?,?,?,?)");
+    if($stmt->execute([$img_id, $img_id, $name, $prc, $prc, $slug, $cat, $description, $PostDate, 1])){
         $last_pro_id = $conn->lastInsertId();
         echo "inserted".$last_pro_id;
     }

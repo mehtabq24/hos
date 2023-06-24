@@ -71,8 +71,14 @@ include('include/config.php');
 								</div>
 								
 									<div class="form-group w-100 m-5">
-										<label for="horizontal-firstname-input" class="col-form-label">Image Link</label>
-										<input type="text" class="form-control" id="image_link" name="image_link" placeholder="Enter Image Link">
+
+									<div class="blog-img-box" data-toggle="modal" data-target="#exampleModal"> <img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png" alt="feature click image">
+										<h5>Set Feature Image</h5> </div>
+										<input type="hidden" class="image_id" name="img_id" /> </div>
+										<div class="float-right">
+											<div class="set_images text-center"> <img src="" alt="" class="image_path"> </div>
+										</div>
+								
 									</div>
 							</div>								
 				<div class="submit-btns clearfix d-flex">           

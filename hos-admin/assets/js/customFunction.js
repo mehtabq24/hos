@@ -92,6 +92,7 @@ function getAllimages() {
 
 // onclick change right panel image data
 function imageChahge(id, path) {
+  alert(id)
   $.ajax({
     type: 'POST',
     url: 'upload.php',
@@ -103,7 +104,7 @@ function imageChahge(id, path) {
       $('#for_dynamicImage,#for_dynamicImage1,#for_dynamicImage2').html(data)
       //location.reload();
       // alert(data);
-      //$('.image_id').attr('value', id)
+      $('.image_id').attr('value', id)
       setImgAgain = path
       // $('.image_path').attr('src', path)
       // console.log($('.image_path').attr('src', path));
