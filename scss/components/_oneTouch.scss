@@ -62,4 +62,18 @@
       }
     }
   }
+  @media (max-width: 767px) {
+    .inner__div{
+        padding-left: 20px;
+        padding-right: 20px;
+        h3{
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .mail__div{
+            gap: 30px;
+            flex-direction: column;
+        }
+    }
+  }
 }

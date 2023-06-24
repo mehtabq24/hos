@@ -394,7 +394,7 @@
   border: solid 2px #fff;
   padding: 20px;
   max-width: 400px;
-  margin: auto;
+  margin: 0rem auto 4rem;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -481,6 +481,19 @@
   letter-spacing: 0em;
   text-align: left;
   color: #fff;
+}
+.cart__page .black__section .one__touch .inner__div {
+  margin: 0px auto;
+}
+@media (max-width: 767px) {
+  .cart__page .black__section .page__heading {
+    font-size: 35px;
+    line-height: 30px;
+    padding: 40px 10px 20px;
+  }
+  .cart__page .black__section .payment__form {
+    margin: 4rem auto;
+  }
 }
 
 * {
@@ -677,6 +690,87 @@ footer .bottom__footer ul li a:hover {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+}
+@media (max-width: 767px) {
+  .one__touch .inner__div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .one__touch .inner__div h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .one__touch .inner__div .mail__div {
+    gap: 30px;
+    flex-direction: column;
+  }
+}
+
+#searchModal {
+  background-color: rgba(255, 255, 255, 0.57);
+}
+#searchModal .modal-dialog {
+  max-width: 100%;
+  margin: 0;
+}
+#searchModal .modal-dialog .modal-body {
+  min-height: 400px;
+  background-color: #000;
+}
+#searchModal .modal-dialog .modal-body .btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  background-image: none;
+  opacity: 1;
+}
+#searchModal .modal-dialog .modal-body .logo {
+  width: 90px;
+}
+#searchModal .modal-dialog .modal-body .input__wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+#searchModal .modal-dialog .modal-body .input__wrapper input {
+  margin: auto;
+  border-radius: 15px;
+  height: 60px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 6px 20px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+#searchModal .modal-dialog .modal-body p {
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  margin: 0.6rem 0px 1rem;
+}
+#searchModal .modal-dialog .modal-body p:first-child {
+  color: #e8e8e8;
+}
+#searchModal .modal-dialog .modal-body .top__search {
+  max-width: 500px;
+  margin: auto;
+  padding: 3rem 0rem 5rem;
+}
+#searchModal .modal-dialog .modal-body .top__search .suggested__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 1.2rem;
+}
+#searchModal .modal-dialog .modal-body .top__search .suggested__list div {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
 }
 
 .slider__heading {

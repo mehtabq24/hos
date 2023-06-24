@@ -83,7 +83,7 @@
         border: solid 2px #fff;
         padding: 20px ;
         max-width: 400px;
-        margin: auto;
+        margin: 0rem auto 4rem;
         .form__heading{
             font-family: Poppins;
 font-size: 22px;
@@ -174,5 +174,22 @@ color: #fff;
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
 }
+.one__touch{
+    .inner__div{
+        margin: 0px auto;
+    }
+}
+  }
+  @media (max-width:767px) {
+    .black__section {
+        .page__heading{
+            font-size: 35px;
+            line-height: 30px;
+            padding: 40px 10px 20px;
+        }
+        .payment__form{
+        margin: 4rem auto;
+        }
+    }
   }
 }

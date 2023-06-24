@@ -24,7 +24,7 @@
     <header>
         <div class="top__header">
             <div>
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#searchModal"></i>
             </div>
             <div><a href=""><img class="logo" src="images/logo.jpg" alt="logo"></a></div>
             <nav>
@@ -49,6 +49,39 @@
                 <li><a>JORDAN</a></li>
             </ul>
         </div>
+        <!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+          <div class="search__content">
+            <div class="w-100 d-flex justify-content-center">
+                <img class="logo" src="images/logo.jpg" alt="logo">
+            </div>
+            <div class="input__wrapper">
+                <input type="text" placeholder="Search House of Sneakers">
+                <p>Hit Enter To See The Results</p>
+            </div>
+            <div class="top__search">
+                <p>Or Explore other Popular Categories:</p>
+                <div class="suggested__list">
+                    <div>JORDAN</div>
+                    <div>JORDAN</div>
+                    <div>JORDAN</div>
+                    <div>JORDAN</div>
+                    <div>JORDAN</div>
+                    <div>JORDAN</div>
+                    <div>JORDAN</div>
+                </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
     </header>
     <main>
         <section class="home__page">
@@ -221,11 +254,11 @@
         <div class="top__footer">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12 col-lg-4 mb-3 mb-lg-0">
                         <p class="foo__heading">Have any Questions?</p>
                         <button>Contact Us</button>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-lg-4 mb-3 mb-lg-0">
                         <p class="foo__heading">Important Links:</p>
                         <ul>
                             <li><a href="about.html">ABOUT US</a></li>
@@ -252,7 +285,7 @@
                     <div class="col-lg-4">
                         <img src="images/logo.jpg" alt="">
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 mb-lg-0 mb-4">
                         <ul>
                             <li><a href="">FAQ</a></li>
                             <li><a href="">HELP DESK</a></li>
