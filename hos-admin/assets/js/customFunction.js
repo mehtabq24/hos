@@ -92,7 +92,6 @@ function getAllimages() {
 
 // onclick change right panel image data
 function imageChahge(id, path) {
-  alert(id)
   $.ajax({
     type: 'POST',
     url: 'upload.php',

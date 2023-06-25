@@ -5,7 +5,10 @@ $('#product_form').validate({
     desc: 'required',
     strn: { required: true },
     prc: { required: true },
-    disc: {
+    description: {
+      required: true,
+    },
+    color: {
       required: true,
     },
     link: {

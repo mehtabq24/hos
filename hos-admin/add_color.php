@@ -54,11 +54,11 @@ ini_set('display_errors', 1);
                                         <label for="cat_slug">Add Title</label>
 										<input type="text" class="form-control add_cat_inputs" id="cat_title" name="cat_title" placeholder="Category Title">   </div>
 										
-										<div class="blog-img-box mt-5" data-toggle="modal" data-target="#exampleModal"> <img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png" alt="feature click image">
+										<div class="blog-img-box" data-toggle="modal" data-target="#exampleModal"> <img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png" alt="feature click image">
 										<h5>Set Feature Image</h5> </div>
 										<input type="hidden" class="image_id" name="img_id" /> </div>
 										<div class="float-right">
-											<div class="customefeature_image"> <img src="" alt="" class="image_path"> </div>
+											<div class="set_images text-center"> <img src="" alt="" class="image_path"> </div>
 										</div>
 										
                                      </div>

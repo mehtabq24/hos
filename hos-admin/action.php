@@ -74,10 +74,11 @@ if($_POST['btn']=='deleteCategory_id'){
     $cat = $_POST['category'];
     $description = $_POST['description']; 
     $img_id = $_POST['img_id'];
+    $color = $_POST['color'];
     $PostDate = date("Y-m-d H:i");
     $stmt = $conn->prepare("INSERT INTO product(img_id, front_img, product_name, 
-    prc, disc_prc, slug, category, description, PostDate, status) VALUES(?,?,?,?,?,?,?,?,?,?)");
-    if($stmt->execute([$img_id, $img_id, $name, $prc, $prc, $slug, $cat, $description, $PostDate, 1])){
+    prc, disc_prc, slug, category, description, product_color, PostDate, status) VALUES(?,?,?,?,?,?,?,?,?,?,?)");
+    if($stmt->execute([$img_id, $img_id, $name, $prc, $prc, $slug, $cat, $description, $color, $PostDate, 1])){
         $last_pro_id = $conn->lastInsertId();
         echo "inserted".$last_pro_id;
     }
@@ -88,11 +89,18 @@ if($_POST['btn']=='deleteCategory_id'){
     $name = $_POST['pro_name'];
     $prc = $_POST['prc'];
     $slug = $_POST['slug'];
-    $cat = $_POST['category'];   
-    $image_link = $_POST['image_link'];
+    $cat = $_POST['category'];
     $desc = $_POST['discription'];
-    $stmt = $conn->prepare("UPDATE product SET image=?, name=?, slug=?, category=?, price=?, description=? WHERE id=?");
-    if($stmt->execute([$image_link, $name, $slug, $cat, $prc, $desc, $product_id])){
+    $color = $_POST['color'];
+
+    if(empty($_POST['img_id'])){
+      $img_id = $_POST['old_img_id'];
+    }else{
+      $img_id = $_POST['img_id'];
+    }
+
+    $stmt = $conn->prepare("UPDATE product SET img_id=?, product_name=?, prc=?, slug=?, category=?, description=?, product_color=? WHERE id=?");
+    if($stmt->execute([$img_id, $name, $prc, $slug, $cat, $desc, $color, $product_id])){
       echo "updated";
     }
   }

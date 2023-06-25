@@ -1,5 +1,6 @@
 <?php session_start();
 session_regenerate_id();
+$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
 ?>
 <!doctype html>
 <html lang="en">
@@ -9,7 +10,17 @@ session_regenerate_id();
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
 <meta content="Themesbrand" name="author" />
- <base href="http://localhost/hos/hos-admin/">
+
+    <?php if(strpos($actual_link, 'localhost')) {?>
+      <base href="http://localhost/hos/hos-admin/">
+    <?php
+      }else {
+    ?>
+      <base href="<?php echo $actual_link; ?>">
+    <?php
+      }
+    ?>
+
  <link rel="shortcut icon" href="assets/images/favicon.ico">
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
